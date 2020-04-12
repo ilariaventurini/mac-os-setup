@@ -5,6 +5,8 @@
 # In this case, the script is to be interpreted and run by the bash shell.
 #-------------------------------------
 
+echo ""
+
 # Install a lot of thing using Homebrew
 ./brew.sh
 
