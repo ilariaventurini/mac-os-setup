@@ -9,6 +9,22 @@ This repository is probably not very interesting to anyone but me. It's all abou
 ./install.sh
 ```
 
+It install a lot of useful things:
+
+- node
+- spotify
+- etc
+
+## Install manually
+
+<!-- - utorrent
+- logitech options
+- cat run - The cat living in the menubar runs at the speed according to the CPU usage
+- photoshop
+
+- estensioni google
+- stampante -->
+
 ## Configure manually
 
 <!-- - Git
