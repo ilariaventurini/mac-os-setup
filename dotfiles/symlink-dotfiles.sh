@@ -4,10 +4,13 @@
 # This script creates symlinks from home directory to any desired dotfiles in ~/dotfiles
 #-------------------------------------
 
-# Variables
+echo "Creating symlinks from home directory to any desired dotfiles in ~/dotfiles..."
+
 dir=~/mac-os-setup/dotfiles # dotfiles directory
 olddir=~/dotfiles_old # old dotfiles backup directory
+
 # list of files/folders to symlink in homedir
+# NOTE: save dotfiles without dot, then add the dot when create the symlink
 files=(
   "$dir/bash_profile" 
   "$dir/gitignore" 
@@ -31,3 +34,5 @@ for file in $files; do
   ln -s $dir/$file ~/.$file
 done
 echo "...done"
+
+echo "...Creating symlinks: done"

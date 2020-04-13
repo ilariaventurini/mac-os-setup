@@ -7,39 +7,31 @@
 #-------------------------------------
 
 # Install Homebrew
+
+echo "Check if Homebrew is installed..."
+
 if test ! $(which brew)
 then
   echo "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   echo "...done"
+else
+  echo "Updating Homebrew..."
+  # Make sure we’re using the latest Homebrew
+  brew update
 fi
-
-# Make sure Homebrew is up to date
-brew update
 
 # Upgrade any already-installed formulae
 brew upgrade
 
 # Check the version type
-# brew -v
+brew -v
 
 # Check your system for potential problems
 # brew doctor
 
-# `brew-cask` installs macOS apps, fonts and plugins and other non-open source software
-brew install brew-cask
-
 # Lists installed Casks
 # brew cask list
-
-# Installs the given Cask
-# brew cask install google-chrome
-
-# Uninstalls the given Cask
-# brew cask uninstall google-chrome
-
-# Search for cask
-# brew search google-chrome
 
 #-------------------------------------
 # Install a lot of macOS formulae.
@@ -49,6 +41,7 @@ brew install brew-cask
 
 echo 'Installing brew formulas...'
 
+brew install mas # Mac App Store manager
 brew install node # Platform built on V8 to build network applications
 brew install exa # Modern replacement for 'ls'
 brew install git # Distributed revision control system
@@ -81,7 +74,6 @@ echo 'Installing brew cask formulas...'
 #   - core formulae
 #   - other taps
 # If you need a formula to be installed from a particular tap, you can use fully qualified names to refer to them.
-brew tap caskroom/cask
 
 # List all the taps
 # brew tap
@@ -89,23 +81,24 @@ brew tap caskroom/cask
 # Specify your defaults in this environment variable
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --fontdir=/Library/Fonts"
 
-brew cask install HOMEBREW_CASK_OPTS firefox
-brew cask install HOMEBREW_CASK_OPTS fork # A fast and friendly git client for Mac and Windows
-brew cask install HOMEBREW_CASK_OPTS google-backup-and-sync
-brew cask install HOMEBREW_CASK_OPTS google-chrome
-brew cask install HOMEBREW_CASK_OPTS iterm2
-brew cask install HOMEBREW_CASK_OPTS jdownloader # Free, open-source download management tool
-brew cask install HOMEBREW_CASK_OPTS libreoffice
-brew cask install HOMEBREW_CASK_OPTS runjs # A JavaScript playground that auto-evaluates as you type
-brew cask install HOMEBREW_CASK_OPTS sip # A better way to collect, organize & share your colors
-brew cask install HOMEBREW_CASK_OPTS slack
-brew cask install HOMEBREW_CASK_OPTS spotify
-brew cask install HOMEBREW_CASK_OPTS spotmenu # Spotify and iTunes in your menu bar
-brew cask install HOMEBREW_CASK_OPTS sublime-text
-brew cask install HOMEBREW_CASK_OPTS telegram-desktop
-brew cask install HOMEBREW_CASK_OPTS visual-studio-code
-brew cask install HOMEBREW_CASK_OPTS vlc
-brew cask install HOMEBREW_CASK_OPTS whatsapp
+brew cask install ${HOMEBREW_CASK_OPTS} firefox
+brew cask install ${HOMEBREW_CASK_OPTS} fork # A fast and friendly git client for Mac and Windows
+brew cask install ${HOMEBREW_CASK_OPTS} google-backup-and-sync
+brew cask install ${HOMEBREW_CASK_OPTS} google-chrome
+brew cask install ${HOMEBREW_CASK_OPTS} iterm2
+brew cask install ${HOMEBREW_CASK_OPTS} jdownloader # Free, open-source download management tool
+brew cask install ${HOMEBREW_CASK_OPTS} libreoffice
+brew cask install ${HOMEBREW_CASK_OPTS} pdfsam-basic # Desktop application to split, merge, extract pages, rotate and mix PDF files
+brew cask install ${HOMEBREW_CASK_OPTS} runjs # A JavaScript playground that auto-evaluates as you type
+brew cask install ${HOMEBREW_CASK_OPTS} sip # A better way to collect, organize & share your colors
+brew cask install ${HOMEBREW_CASK_OPTS} slack
+brew cask install ${HOMEBREW_CASK_OPTS} spotify
+brew cask install ${HOMEBREW_CASK_OPTS} spotmenu # Spotify and iTunes in your menu bar
+brew cask install ${HOMEBREW_CASK_OPTS} sublime-text
+brew cask install ${HOMEBREW_CASK_OPTS} telegram-desktop
+brew cask install ${HOMEBREW_CASK_OPTS} visual-studio-code
+brew cask install ${HOMEBREW_CASK_OPTS} vlc
+brew cask install ${HOMEBREW_CASK_OPTS} whatsapp
 
 echo "...done"
 
@@ -115,8 +108,8 @@ echo "...done"
 
 # echo 'Installing fonts...'
 
-# cp ~/fonts/Inconsolata/Inconsolata-Regular.ttf HOMEBREW_CASK_OPTS Inconsolata-Regular.ttf
-# cp ~/fonts/Inconsolata/Inconsolata-Bold.ttf HOMEBREW_CASK_OPTS Inconsolata-Bold.ttf
+# cp ~/fonts/Inconsolata/Inconsolata-Regular.ttf ${HOMEBREW_CASK_OPTS} Inconsolata-Regular.ttf
+# cp ~/fonts/Inconsolata/Inconsolata-Bold.ttf ${HOMEBREW_CASK_OPTS} Inconsolata-Bold.ttf
 
 # echo '...done'
 
@@ -126,7 +119,7 @@ echo "...done"
 
 echo 'Removing outdated versions from the cellar...'
 
-# Remove outdated versions from the cellar
+# Remove outdated versions from the cellar.
 brew cleanup
 
 echo '...done'
