@@ -1,0 +1,89 @@
+{
+  "editor.semanticHighlighting.enabled": true,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.lightbulb.enabled": true,
+  "editor.tabCompletion": "on", // edit file in compare mode
+  "editor.renderIndentGuides": true, // remove default indent line guide
+  "editor.renderControlCharacters": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "workbench.editor.enablePreviewFromQuickOpen": false, // disable the super annoying peek window
+  "workbench.editor.labelFormat": "short",
+  "workbench.startupEditor": "welcomePage",
+  "workbench.colorTheme": "Ohlala theme",
+  ///////////////////////////////////////
+  // FORMATTING
+  ///////////////////////////////////////
+  // Controls whether the editor should automatically format the pasted content. 
+  // A formatter must be available and the formatter should be able to format a range in a document.
+  "editor.formatOnPaste": true,
+  // Format a file on save. A formatter must be available, the file must not be saved after delay,
+  // and the editor must not be shutting down.
+  "editor.formatOnSave": true,
+  // Controls whether the editor should automatically format the line after typing.
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  ///////////////////////////////////////
+  // Enable per-language
+  ///////////////////////////////////////
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.enabled": true,
+  "material-icon-theme.activeIconPack": "react",
+  "sync.autoUpload": false,
+  "terminal.integrated.rendererType": "dom",
+  "window.zoomLevel": 0,
+  "window.title": "${activeEditorLong}${separator}${rootName}",
+  "window.nativeTabs": false,
+  ///////////////////////////////////////
+  // EXTENSIONS
+  ///////////////////////////////////////
+  "prettier.requireConfig": true,
+  "liveshare.featureSet": "insiders",
+  "liveshare.showInStatusBar": "whileCollaborating",
+  "vscodeGoogleTranslate.preferredLanguage": "en",
+  "sync.gist": "e1183aa8f329e949a87007e7fdff8427",
+  "markdown.extension.toc.githubCompatibility": true,
+  ///////
+  // Format toggle
+  // https://github.com/Tom-Bonnike/vscode-formatting-toggle
+  // A VS Code extension that allows you to toggle the formatter (Prettier, Beautify, …)
+  // ON and OFF with a simple click.
+  ///////
+  "formattingToggle.affects": [
+    "formatOnSave"
+  ],
+  ///////
+  // vscode-spotify
+  // https://github.com/ShyykoSerhiy/vscode-spotify
+  // Use Spotify inside vscode.
+  ///////
+  "spotify.showLyricsButton": false,
+  "spotify.showMuteUnmuteVolumeButton": false,
+  "spotify.trackInfoFormat": "artistName - trackName",
+  "spotify.volumeUpButtonPriority": 0,
+}

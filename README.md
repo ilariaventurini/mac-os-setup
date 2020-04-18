@@ -381,3 +381,100 @@ Preferences:
     - [ ] three-finger tap emulates middle click
     - [ ] focus follows mouse
 - Advanced
+
+## VSCODE
+
+Preferences
+- Settings
+  - editor: font size -> 12
+  - [x] lightbulb: enabled
+  - [ ] render control characters
+  - [x] render indent guides
+  - [x] semantic highlighting: enabled
+  - tab completion -> on
+  - tab size -> 2
+  - [x] format on past
+  - [x] format on save
+  - [x] format on type
+  - [ ] minimap enabled
+  - startup editor -> welcomePage
+  - [x] activity bar: visible
+  - color theme -> ohlala
+  - icon theme -> material-icon-theme
+  - side bar: location -> left
+  - [ ] enable preview from quick open
+  - [x] focus recent editor after close
+  - [x] highlight modified tabs
+  - label format -> short
+  - [ ] native tabs
+  - title -> ${activeEditorLong}${separator}${rootName}
+  - zoom level -> 0
+  - integrated: renderer type -> dom
+  - extensions
+    - Auto rename tag configuration
+    - bracketpair
+    - code settings sync configuration settings
+      - [ ] sync: auto upload
+      - [ ] sync: gist -> e1183aa8f329e949a87007e7fdff8427
+    - codetour
+    - CSS
+    - emmet
+    - eslint
+    - formatting toggle's configuration
+    - gistpad
+    - git
+      - [x] enabled
+    - git graph
+    - gitlens
+    - grunt
+    - gulp
+    - HTML
+    - htmltagwrap
+    - intellisense for css class names in html
+    - jake
+    - javascript booster
+    - json
+    - less
+    - markdown
+      - [x] markdown -> extension -> toc: github conmpatibility
+    - material icons
+      - active icon pack -> react
+    - merge conflict
+    - microsoft account
+    - node debug
+    - npm
+    - path insellisense
+    - php
+    - prettier
+      - [x] prettier: require config
+    - rainbow csv
+    - random everything configuration
+    - reference search view
+    - scss (Sass)
+    - svg
+    - TODO highlight
+    - tslint
+    - typescript
+      - [x] javascript -> implicit project config: experimental decorators
+      - [x] javascript -> update imports on file move: enabled
+      - [x] typescript -> update imports on file move: always
+    - visual studio live share configuration
+      - liveshare: feature set -> insiders
+      - liveshare: show in status bar -> while collaborating
+    - vscode shader configuration
+    - vscode google translate
+      - vscode google translate: preferred language -> en
+    - vscode svg viewer configuration
+    - vscode-spotify configuration
+      - [ ] spotify: show lyrics button
+      - [ ] spotify: show mute unmute volume button
+      - spotify: track info format -> artistName - trackName
+      - spotify: volume up button priority -> 0
+
+- Online services settings -> /
+- Extensions -> vedi sopra
+- Keyboard shortcuts -> keybindings.json
+- Keymaps -> /
+- User snippets -> ...code-snippets
+- Color theme -> ohlala (horizon, panda syntax, lucy, yoncè)
+- File icon theme -> material icon theme

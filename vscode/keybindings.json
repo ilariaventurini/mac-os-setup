@@ -1,0 +1,48 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "cmd+y",
+    "command": "redo",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "extension.translateLinesUnderCursorPreferred"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "extension.translateLinesUnderCursor"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "openInSourceTree.open"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  }
+]
