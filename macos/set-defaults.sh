@@ -200,13 +200,13 @@ defaults write com.apple.dock show-recents -bool false
 #  - iTerm
 #  - Fork
 #  - WhatsApp
-dockutil --no-restart --remove all
-dockutil --no-restart --add "/Applications/Google Chrome.app"
-dockutil --no-restart --add "/Applications/Visual Studio Code.app"
-dockutil --no-restart --add "/Applications/Spotify.app"
-dockutil --no-restart --add "/Applications/iTerm.app"
-dockutil --no-restart --add "/Applications/Fork.app"
-dockutil --no-restart --add "/Applications/WhatsApp.app"
+# dockutil --no-restart --remove all
+# dockutil --no-restart --add "/Applications/Google Chrome.app"
+# dockutil --no-restart --add "/Applications/Visual Studio Code.app"
+# dockutil --no-restart --add "/Applications/Spotify.app"
+# dockutil --no-restart --add "/Applications/iTerm.app"
+# dockutil --no-restart --add "/Applications/Fork.app"
+# dockutil --no-restart --add "/Applications/WhatsApp.app"
 
 echo "...Dock: done"
 
@@ -314,8 +314,9 @@ echo "...Users & groups: done"
 echo "Configuring System Preferences - Accessibility..."
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# Could not write domain com.apple.universalaccess; exiting
+# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+# defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
 # Follow the keyboard focus while zoomed in
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
@@ -336,8 +337,8 @@ defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool true
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 5
+defaults write NSGlobalDomain InitialKeyRepeat -int 9
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -498,8 +499,8 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Show|Hide Sidebar: show
 defaults write com.apple.finder ShowSidebar -bool true
 
-# Show|Hide Preview: show
-defaults write com.apple.finder ShowPreviewPane -bool true
+# Show|Hide Preview: hide
+defaults write com.apple.finder ShowPreviewPane -bool false
 
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
@@ -650,7 +651,7 @@ sudo nvram SystemAudioVolume=" "
 #   2. get that color’s RGB values
 #   3. take each value and divide it by 255
 #   4. put them into the string in order R G B.
-defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
+# defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
 # Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName

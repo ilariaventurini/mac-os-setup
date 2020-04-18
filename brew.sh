@@ -46,6 +46,7 @@ brew install node # Platform built on V8 to build network applications
 brew install exa # Modern replacement for 'ls'
 brew install git # Distributed revision control system
 brew install yarn # JavaScript package manager
+brew install stow # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew install zsh # UNIX shell (command interpreter)
 brew install zsh-autosuggestions # Fish-like fast/unobtrusive autosuggestions for zsh
 brew install zsh-completions # Additional completion definitions for zsh
@@ -58,6 +59,11 @@ brew install zsh-syntax-highlighting # 	Fish shell like syntax highlighting for 
 brew link node
 
 echo "...done"
+
+#-------------------------------------
+# Install oh-my-zsh using curl.
+#-------------------------------------
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #-------------------------------------
 # Install a lot of macOS casks.
