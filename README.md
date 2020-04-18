@@ -189,15 +189,15 @@ Preferences:
   -  [x] Remember checkout state in create  brach dialog
   -  [x] Always  use dark theme
 - Commit
-  - Commit  subject: Low limit 50, high limit 70
+  - Commit subject: Low limit 50, high limit 70
   - [x] Check spelling as you  type  in commit message
-  - [ ]  Use monospace font in commit description
+  - [ ] Use monospace font in commit description
 - Git
 - Integration
-  -  Terminal client: iterm
+  - Terminal client: iterm
   - Merge tool: fileMerge
-  - External  diff tool: fileMerge
-  - Default  bitbucket tool: Fork.app
+  - External diff tool: fileMerge
+  - Default bitbucket tool: Fork.app
   - Default github tool: Fork.app
   - [x] hightlight bugtracker links in commit messagges
   - command line:  fork cli v4 installed
