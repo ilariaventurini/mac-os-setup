@@ -1,0 +1,15 @@
+# OS generated file
+._*
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# General
+*.log
+log/
+
+# Node
+npm-debug.log
+
+# Vi
+*~
