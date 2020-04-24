@@ -15,6 +15,7 @@
   // 	],
   // 	"description": "Log output to console"
   // }
+
   "new react component in TS": {
     "prefix": "newReactTsComponent",
     "body": [
@@ -39,6 +40,7 @@
     ],
     "description": "new react component in TS"
   },
+
   "new react component in TS with state": {
     "prefix": "newReactTsComponentWithState",
     "body": [
@@ -69,11 +71,10 @@
     ],
     "description": "new react component in TS with state"
   },
+
   "react fragment": {
     "prefix": "<React.Frag",
-    "body": [
-      "<React.Fragment></React.Fragment>"
-    ],
+    "body": ["<React.Fragment></React.Fragment>"],
     "description": "react fragment"
   }
 }

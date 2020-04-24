@@ -1,89 +1,101 @@
 {
-  "editor.semanticHighlighting.enabled": true,
+  ///////////////////////////////////////////
+  // Editor
+  ///////////////////////////////////////////
+  // Controls the font size in pixels.
+  "editor.fontSize": 12,
+  // Enables tab completions.
+  //  - on: Tab complete will insert the best matching suggestion when pressing tab.
+  //  - off: Disable tab completions.
+  //  - onlySnippets: Tab complete snippets when their prefix match. Works best when 'quickSuggestions' aren't enabled.
+  "editor.tabCompletion": "on",
+  // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
-  "editor.lightbulb.enabled": true,
-  "editor.tabCompletion": "on", // edit file in compare mode
-  "editor.renderIndentGuides": true, // remove default indent line guide
-  "editor.renderControlCharacters": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.activityBar.visible": true,
-  "workbench.sideBar.location": "left",
-  "workbench.editor.enablePreviewFromQuickOpen": false, // disable the super annoying peek window
-  "workbench.editor.labelFormat": "short",
-  "workbench.startupEditor": "welcomePage",
-  "workbench.colorTheme": "Ohlala theme",
-  ///////////////////////////////////////
-  // FORMATTING
-  ///////////////////////////////////////
-  // Controls whether the editor should automatically format the pasted content. 
-  // A formatter must be available and the formatter should be able to format a range in a document.
+  // Controls whether the editor should automatically format the pasted content. A formatter must be available and the formatter should be able to format a range in a document.
   "editor.formatOnPaste": true,
-  // Format a file on save. A formatter must be available, the file must not be saved after delay,
-  // and the editor must not be shutting down.
+  // Format a file on save. A formatter must be available, the file must not be saved after delay, and the editor must not be shutting down.
   "editor.formatOnSave": true,
   // Controls whether the editor should automatically format the line after typing.
   "editor.formatOnType": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  ///////////////////////////////////////
-  // Enable per-language
-  ///////////////////////////////////////
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "javascript.implicitProjectConfig.experimentalDecorators": true,
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "git.enabled": true,
-  "material-icon-theme.activeIconPack": "react",
-  "sync.autoUpload": false,
-  "terminal.integrated.rendererType": "dom",
-  "window.zoomLevel": 0,
+  // Controls whether the minimap is shown.
+  "editor.minimap.enabled": false,
+  ///////////////////////////////////////////
+  // Workbench
+  ///////////////////////////////////////////
+  // Controls whether editors opened from Quick Open show as preview. Preview editors are reused until they are pinned (e.g. via double click or editing).
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  // Controls the format of the label for an editor.
+  //  - default: Show the name of the file. When tabs are enabled and two files have the same name in one group the distinguishing sections of each file's path are added. When tabs are disabled, the path relative to the workspace folder is shown if the editor is active.
+  //  - short: Show the name of the file followed by its directory name.
+  //  - medium: Show the name of the file followed by its path relative to the workspace folder.
+  //  - long: Show the name of the file followed by its absolute path.
+  "workbench.editor.labelFormat": "short",
+  // Controls the window title based on the active editor. Variables are substituted based on the context:
+  // - `${activeEditorShort}`: the file name (e.g. myFile.txt).
+  // - `${activeEditorMedium}`: the path of the file relative to the workspace folder (e.g. myFolder/myFileFolder/myFile.txt).
+  // - `${activeEditorLong}`: the full path of the file (e.g. /Users/Development/myFolder/myFileFolder/myFile.txt).
+  // - `${activeFolderShort}`: the name of the folder the file is contained in (e.g. myFileFolder).
+  // - `${activeFolderMedium}`: the path of the folder the file is contained in, relative to the workspace folder (e.g. myFolder/myFileFolder).
+  // - `${activeFolderLong}`: the full path of the folder the file is contained in (e.g. /Users/Development/myFolder/myFileFolder).
+  // - `${folderName}`: name of the workspace folder the file is contained in (e.g. myFolder).
+  // - `${folderPath}`: file path of the workspace folder the file is contained in (e.g. /Users/Development/myFolder).
+  // - `${rootName}`: name of the workspace (e.g. myFolder or myWorkspace).
+  // - `${rootPath}`: file path of the workspace (e.g. /Users/Development/myWorkspace).
+  // - `${appName}`: e.g. VS Code.
+  // - `${remoteName}`: e.g. SSH
+  // - `${dirty}`: a dirty indicator if the active editor is dirty.
+  // - `${separator}`: a conditional separator (" - ") that only shows when surrounded by variables with values or static text.
+  "workbench.colorTheme": "Ohlala theme",
+  "workbench.iconTheme": "material-icon-theme",
+  ///////////////////////////////////////////
+  // Window
+  ///////////////////////////////////////////
   "window.title": "${activeEditorLong}${separator}${rootName}",
-  "window.nativeTabs": false,
-  ///////////////////////////////////////
-  // EXTENSIONS
-  ///////////////////////////////////////
+  ///////////////////////////////////////////
+  // Terminal
+  ///////////////////////////////////////////
+  // Controls how the terminal is rendered.
+  //  - auto: Let VS Code guess which renderer to use.
+  //  - canvas: Use the standard GPU/canvas-based renderer.
+  //  - dom: Use the fallback DOM-based renderer.
+  "terminal.integrated.rendererType": "dom",
+  ///////////////////////////////////////////
+  // Extensions
+  ///////////////////////////////////////////
+  //----------------------
+  // Prettier
+  //----------------------
   "prettier.requireConfig": true,
+  //----------------------
+  // Typescript
+  //----------------------
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  //----------------------
+  // Liveshare
+  //----------------------
   "liveshare.featureSet": "insiders",
   "liveshare.showInStatusBar": "whileCollaborating",
+  //----------------------
+  // VS Code Google translate
+  //----------------------
   "vscodeGoogleTranslate.preferredLanguage": "en",
-  "sync.gist": "e1183aa8f329e949a87007e7fdff8427",
-  "markdown.extension.toc.githubCompatibility": true,
-  ///////
-  // Format toggle
-  // https://github.com/Tom-Bonnike/vscode-formatting-toggle
-  // A VS Code extension that allows you to toggle the formatter (Prettier, Beautify, …)
-  // ON and OFF with a simple click.
-  ///////
-  "formattingToggle.affects": [
-    "formatOnSave"
-  ],
-  ///////
-  // vscode-spotify
-  // https://github.com/ShyykoSerhiy/vscode-spotify
-  // Use Spotify inside vscode.
-  ///////
+  //----------------------
+  // VS Code Spotify
+  //----------------------
   "spotify.showLyricsButton": false,
   "spotify.showMuteUnmuteVolumeButton": false,
-  "spotify.trackInfoFormat": "artistName - trackName",
   "spotify.volumeUpButtonPriority": 0,
+  "spotify.showSignOutButton": false,
+  "spotify.showSignInButton": false,
+  "spotify.trackInfoClickBehaviour": "play_pause",
+  "spotify.unmuteButtonPriority": 0,
+  "spotify.muteButtonPriority": 0,
+  "spotify.muteUnmuteButtonPriority": 0,
+  "spotify.signInButtonPriority": 0,
+  "spotify.signOutButtonPriority": 0,
+  "spotify.toggleRepeatingButtonPriority": 0,
+  "spotify.toggleShufflingButtonPriority": 0,
+  "spotify.volumeDownButtonPriority": 0,
 }
