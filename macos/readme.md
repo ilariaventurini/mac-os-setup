@@ -1,9 +1,7 @@
 # 💻 Mac OS settings
 
-Qui ci sono le impostazioni di sistema del mac, del Finder.
-Le cose in bold dovrebbero essere gestite dallo script macos.sh, le altre sono da configurare manualmente.
-
-TODO: macos.sh fa anche cose che dovrebbero essere spostate in altri script.
+Belowe the list of the mac system settings.
+Things in bold should be handled by the `install.sh` script, the rest are to be configured manually.
 
 ## System preferences
 
