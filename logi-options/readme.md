@@ -1,6 +1,4 @@
-# Other softwares settings
-
-## 🖱 Logi Options for Mouse MX vertical
+# 🖱 Logi Options for Mouse MX vertical
 
 - Mouse
   - Button on top: Scroll left
