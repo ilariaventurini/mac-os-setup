@@ -3,12 +3,6 @@
 This repository is probably not very interesting to anyone but me.
 It contains everything (or almost) that I think is necessary have on a new Mac: softwares, system settings and dotfiles.
 
-## Install stuff
-
-```bash
-bash ./main.sh
-```
-
 ## Install manually
 
 - **uTorrent: to donwload things**
@@ -17,14 +11,7 @@ bash ./main.sh
 - photoshop: you know
 - printer drivers
 
-## Thanks to
-
-Most of commands taken from:
-
-- https://github.com/mathiasbynens/dotfiles
-- https://github.com/tech-otaku/macos-config-catalina
-
-### stow
+<!-- ### stow
 
 installo stow con brew e sposto i dotfiles dentro la cartella ilariaventurini/dotfiles (che creo).
 Dentro dotfiles creo diverse cartelle, una per ogni programma, es:
@@ -38,4 +25,4 @@ ora sposto dentro ogni cartella i dotfiles di riferimento, così come sono, senz
 
 Ora quindi ilariaventurini/ non ha più i singoli dotfiles
 
-apro il Terminare, e vado dentro dotfiles, poi lancio il comando `stow iterm`, `stow zsh`, .. uno per ogni cartella. Questo mi crea dei symlink dentro ilariaventurini con la struttura originale. Quindi ora ilariaventurini è "disordinata" ma i dotfiles sono in realtà ben organizzati dentro dotfiles e posso modificare quelli quando mi serve
+apro il Terminare, e vado dentro dotfiles, poi lancio il comando `stow iterm`, `stow zsh`, .. uno per ogni cartella. Questo mi crea dei symlink dentro ilariaventurini con la struttura originale. Quindi ora ilariaventurini è "disordinata" ma i dotfiles sono in realtà ben organizzati dentro dotfiles e posso modificare quelli quando mi serve -->
