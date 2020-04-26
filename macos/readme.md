@@ -1,8 +1,8 @@
 # 💻 Mac OS settings
 
 Belowe the list of the mac system settings.
-Things in bold should be handled by the `install.sh` script, the rest are to be configured manually.
-I suggest you to do not run `install.sh` because not all commands works so copy manually all the settings.
+Things in bold should be handled by the `set-defaults.sh` script, the rest are to be configured manually.
+I suggest you to do not run `set-defaults.sh` because not all commands works so copy manually all the settings.
 
 ## System preferences
 

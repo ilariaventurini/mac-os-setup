@@ -1,24 +1,31 @@
 # Homebrew
 
-# Install 
+## Install
 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+Run `install.sh` script. It will install:
 
-Check that everything is ok: `brew --version`.
+- brew (or update it)
+- node
+- exa
+- git
+- yarn
+- firefox
+- fork
+- google-backup-and-sync
+- google-chrome
+- iterm2
+- jdownloader
+- libreoffice
+- pdfsam-basic
+- runjs
+- sip
+- slack
+- spotify
+- spotmenu
+- sublime-text
+- telegram-desktop
+- visual-studio-code
+- vlc
+- whatsapp
 
-Now `/usr/local/` should contain:
-
-- `/usr/local/bin`
-- `/usr/local/Caskroom`
-- `/usr/local/Cellar`
-- `/usr/local/etc`
-- `/usr/local/Frameworks`
-- `/usr/local/Homebrew`
-- `/usr/local/include`
-- `/usr/local/lib`
-- `/usr/local/opt`
-- `/usr/local/sbin`
-- `/usr/local/share`
-- `/usr/local/var`
-
-Take a look at `install.sh`. It uses brew to install some software you need but not run it at all. Run the commands you need.
+If you want to add o remove something, change the script.

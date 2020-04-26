@@ -21,6 +21,20 @@ else
   brew update
 fi
 
+# Now `/usr/local/` should contain:
+# - `/usr/local/bin`
+# - `/usr/local/Caskroom`
+# - `/usr/local/Cellar`
+# - `/usr/local/etc`
+# - `/usr/local/Frameworks`
+# - `/usr/local/Homebrew`
+# - `/usr/local/include`
+# - `/usr/local/lib`
+# - `/usr/local/opt`
+# - `/usr/local/sbin`
+# - `/usr/local/share`
+# - `/usr/local/var`
+
 # Upgrade any already-installed formulae
 brew upgrade
 
@@ -41,29 +55,24 @@ brew -v
 
 echo 'Installing brew formulas...'
 
-brew install mas # Mac App Store manager
+# brew install mas # Mac App Store manager
 brew install node # Platform built on V8 to build network applications
 brew install exa # Modern replacement for 'ls'
 brew install git # Distributed revision control system
 brew install yarn # JavaScript package manager
-brew install stow # Organize software neatly under a single directory tree (e.g. /usr/local)
-brew install zsh # UNIX shell (command interpreter)
-brew install zsh-autosuggestions # Fish-like fast/unobtrusive autosuggestions for zsh
-brew install zsh-completions # Additional completion definitions for zsh
-brew install zsh-git-prompt # Informative git prompt for zsh
-brew install zsh-history-substring-search # Zsh port of Fish shell's history search
-brew install zsh-lovers # Tips, tricks, and examples for zsh
-brew install zsh-navigation-tools # Zsh curses-based tools, e.g. multi-word history searcher
-brew install zsh-syntax-highlighting # 	Fish shell like syntax highlighting for zsh
+# brew install stow # Organize software neatly under a single directory tree (e.g. /usr/local)
+# brew install zsh # UNIX shell (command interpreter)
+# brew install zsh-autosuggestions # Fish-like fast/unobtrusive autosuggestions for zsh
+# brew install zsh-completions # Additional completion definitions for zsh
+# brew install zsh-git-prompt # Informative git prompt for zsh
+# brew install zsh-history-substring-search # Zsh port of Fish shell's history search
+# brew install zsh-lovers # Tips, tricks, and examples for zsh
+# brew install zsh-navigation-tools # Zsh curses-based tools, e.g. multi-word history searcher
+# brew install zsh-syntax-highlighting # 	Fish shell like syntax highlighting for zsh
 
 brew link node
 
 echo "...done"
-
-#-------------------------------------
-# Install oh-my-zsh using curl.
-#-------------------------------------
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #-------------------------------------
 # Install a lot of macOS casks.

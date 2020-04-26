@@ -1,5 +1,13 @@
 # VS Code
 
+## Install
+
+Run `install.sh` script. It will install:
+
+- VS Code
+- extensions listed in `extensions.txt` file
+
+<!--
 VS Code settings are inside `/Users/ilariaventurini/Library/Application Support/Code/User` in this way:
 
 ```txt
@@ -25,14 +33,15 @@ code --list-extensions > ~/extensions.txt && echo Done!
 # Install extensions listed in ~/extensions.txt
 # alias: `vscode-extensions-install`
 xargs -n 1 code --install-extension < ~/extensions.txt
-```
+```-->
 
 ## Settings
 
 These settings should already be set having previously copied the files listed above.
 Anyway, if you need them, they are:
 
-Preferences
+Preferences:
+
 - Settings
   - editor: font size -> 12
   - [x] lightbulb: enabled

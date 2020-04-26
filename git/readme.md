@@ -1,6 +1,13 @@
 # Git
 
-- Copy `.gitconfig` and `.gitignore_global` files inside `Users/ilariaventurini`
+## Install
+
+Run `install.sh` script. It will install:
+
+- git using brew
+- fork
+
+<!-- Copy `.gitconfig` and `.gitignore_global` files inside `Users/ilariaventurini` -->
 
 ## Git Fork
 
