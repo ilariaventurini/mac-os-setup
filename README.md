@@ -26,12 +26,13 @@ Read the readme and then run the `./vscode/install.sh` script.
 **6. Macos settings**: Take a look at `./macos` content.\
 Read the readme and then DO NOT run the `./macos/set-defaults.sh` script.
 
-**7. Install manually**: 
+**7. Install manually**:
+
 - [uTorrent](https://www.utorrent.com/intl/it/downloads/mac): to download torrents
 - [Logitech Options](https://www.logitech.com/it-it/product/options) to use mouse MX Vertical. See settings in `./logi-options/readme.md`
 - [Run cat](https://apps.apple.com/us/app/runcat/id1429033973?mt=12): the cat runs at the speed according to the CPU usage of your Mac
 - Photoshop: you know. See [here](https://drive.google.com/open?id=1nBiyFOkjIfmYKfxHJfflpJaAbKjLrD0H)
-- [Stylus extensions](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) in Chrome: Stylus allows you to easily install themes and skins for many popular sites. See `./chrome/extensions/readme.md`
+- [Stylus extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) in Chrome: Stylus allows you to easily install themes and skins for many popular sites. See `./chrome/extensions/readme.md`
 - printer drivers
 
 ## Symlink dotfiles
@@ -40,4 +41,4 @@ At this point you should have installed everything you need, perfect.\
 What we will do now is to use the dotfiles present in this repo to customize the installed applications. We will use symlinks.
 
 Run `./make-symlinks.sh` file.
-This script move each dotfiles inside a backup directory (`~/dotfiles_backup`) and create a symklink.
+This script moves each dotfiles inside a backup directory (`~/dotfiles_backup`) and creates a symklink for each dotfile.
