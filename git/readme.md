@@ -1,13 +1,13 @@
-# Git
+# 🏷 Git
 
-## Install
+## ⚙️ Install
 
 Run `install.sh` script. It will install:
 
 - git using brew
 - fork
 
-## Git Fork
+## ⚔️ Git Fork
 
 Preferences:
 

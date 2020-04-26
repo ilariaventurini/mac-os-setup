@@ -1,6 +1,6 @@
-# iTerm
+# 🌰 iTerm
 
-## Install
+## ⚙️ Install
 
 Run `install.sh` script to install iTerm2.
 
@@ -9,7 +9,7 @@ To import the color theme:
 - select `Preferences... -> Profiles -> Colors`
 - then at the bottom right select `Color presents -> Import... -> chose ohlala.itermcolors`
 
-## Settings
+## 🧷 Settings
 
 Preferences:
 

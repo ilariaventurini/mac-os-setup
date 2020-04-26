@@ -1,13 +1,13 @@
-# VS Code
+# 🐛 VS Code
 
-## Install
+## ⚙️ Install
 
 Run `install.sh` script. It will install:
 
 - VS Code
 - extensions listed in `extensions.txt` file
 
-## Settings
+## 🧷 Settings
 
 These settings should already be set having previously copied the files listed above.
 Anyway, if you need them, they are:

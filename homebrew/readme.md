@@ -1,6 +1,6 @@
-# Homebrew
+# ⚡️ Homebrew
 
-## Install
+## ⚙️ Install
 
 Run `install.sh` script. It will install:
 

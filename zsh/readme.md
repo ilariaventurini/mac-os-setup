@@ -1,4 +1,4 @@
-# ZSH & Co
+# 🚀 ZSH & Co
 
 ## ZSH
 
@@ -29,7 +29,7 @@ NOTE: a _zsh_ theme can't change the appearance of your terminal emulator. This 
 
 The **.zshrc** file (or just _zshrc file_) is a file that _zsh_ reads when it starts. It can be found in your home directory, which will change depending on the system and platform you're using. On a terminal, the path to the home directory can be found by running `echo $HOME`.
 
-### Install
+### ⚙️ Install
 
 Run `install.sh` script. It will install:
 
