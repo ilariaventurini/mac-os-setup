@@ -41,4 +41,11 @@ At this point you should have installed everything you need, perfect.\
 What we will do now is to use the dotfiles present in this repo to customize the installed applications. We will use symlinks.
 
 Run `./make-symlinks.sh` file.
-This script moves each dotfiles inside a backup directory (`~/dotfiles_backup`) and creates a symklink for each dotfile.
+This script moves each dotfiles inside a backup directory (`~/dotfiles_backup/YYYY-MM-DD_hh/mm/ss`) and creates a symklink for each dotfile.
+
+**NOTE: Revert**\
+If you want to revert the symlink process, you have to remove the symlinks created and replace them with the old dotfiles that are now in `~/dotfiles_backup/YYYY-MM-DD_hh/mm/ss`.
+
+**NOTE: Changes**\
+When a dotfiles is updated, you should commit changes and push it. Then pull it in the other machines and everything should go fine.
+If you creates new dotfiles, add them to the repo, remember to add also references in `./make-symlinks.sh` and run this script in the other machines.
