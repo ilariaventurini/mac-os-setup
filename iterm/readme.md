@@ -4,14 +4,10 @@
 
 Run `install.sh` script to install iTerm2.
 
-<!-- Preferences are inside `/Users/ilariaventurini/Library/Preferences` so copy the file `com.googlecode.iterm2.plist` inside that folder.
-
 To import the color theme:
 
 - select `Preferences... -> Profiles -> Colors`
 - then at the bottom right select `Color presents -> Import... -> chose ohlala.itermcolors`
-
-`.iterm2_shell_integration.zsh` should be inside `/Users/ilariaventurini/` folder. -->
 
 ## Settings
 

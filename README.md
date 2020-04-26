@@ -48,3 +48,8 @@ Read the readme and then DO NOT run the `./macos/set-defaults.sh` script.
 - printer drivers
 
 ## Symlink dotfiles
+
+At this point you should have installed everything you need, perfect.\
+What we will do now is to use the dotfiles present in this repo to customize the installed applications. We will use symlinks.
+
+Run `./make-symlinks.sh` file.

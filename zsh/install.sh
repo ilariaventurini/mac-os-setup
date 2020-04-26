@@ -53,38 +53,3 @@ echo "Creating a symlink of spaceship.zsh-theme to your oh-my-zsh custom themes 
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 echo "...done"
 
-########################################################################
-########################################################################
-########################################################################
-
-# pwd=$PWD # current directory, ie /Users/ilariaventurini/mac-os-setup
-# olddir=~/dotfiles_zsh_old # old dotfiles backup directory
-# echo ${pwd}
-# echo ${olddir}
-
-# # Go to home directory
-# echo "=> Changing to the ~/ directory"
-# cd ~/
-# echo "...done"
-
-# # Create olddir in homedir
-# echo "=> Creating $olddir for backup of any existing dotfiles in ~/..."
-# mkdir -p $olddir
-# echo "...done"
-
-# # Change to the dotfiles directory
-# echo "=> Changing to the ~/mac-os-setup/zsh directory"
-# cd ~/mac-os-setup/zsh
-# echo "...done"
-
-# # Move any existing dotfiles in homedir to olddir directory
-# echo "=> Moving .aliases.sh from ~/ to $olddir"
-# mv ~/.aliases.sh $olddir
-# echo "=> Moving .functions.sh from ~/ to $olddir"
-# mv ~/.functions.sh $olddir
-
-# # Create symlinks
-# echo "Creating symlink to .aliases.sh in ~/..."
-# ln -sf ~/mac-os-setup/zsh/.aliases.sh ~/.aliases.sh
-# echo "Creating symlink to .functions.sh in ~/..."
-# ln -sf ~/mac-os-setup/zsh/.functions.sh ~/.functions.sh

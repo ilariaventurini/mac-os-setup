@@ -7,34 +7,6 @@ Run `install.sh` script. It will install:
 - VS Code
 - extensions listed in `extensions.txt` file
 
-<!--
-VS Code settings are inside `/Users/ilariaventurini/Library/Application Support/Code/User` in this way:
-
-```txt
-/Users/ilariaventurini/Library/Application Support/Code/User/
-|_ snippets/
-  |_ javascript.code-snippets
-  |_ random.code-snippets
-  |_ react.code-snippets
-  |_ svg.code-snippets
-|_ keybindings.json
-|_ settings.json
-```
-
-Preferences are instead inside `/Users/ilariaventurini/Library/Preferences` so copy the file `com.microsoft.VSCode.plist` inside that folder.
-
-If you want to know the list of the installed extensions:
-
-```bash
-# Save extensions list in ~/extensions.txt
-# alias: `vscode-extensions-save`
-code --list-extensions > ~/extensions.txt && echo Done!
-
-# Install extensions listed in ~/extensions.txt
-# alias: `vscode-extensions-install`
-xargs -n 1 code --install-extension < ~/extensions.txt
-```-->
-
 ## Settings
 
 These settings should already be set having previously copied the files listed above.

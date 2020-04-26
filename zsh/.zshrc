@@ -60,7 +60,7 @@ source $HOME/.functions.sh
 # Tab title
 # Set tab title as the current path.
 #----------------------------------
-source $HOME/.tab_title.sh
+source $HOME/.tab-title.sh
 
 #----------------------------------
 # iTerm status bar
