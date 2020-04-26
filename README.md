@@ -31,7 +31,7 @@ Read the readme and then DO NOT run the `./macos/set-defaults.sh` script.
 - [uTorrent](https://www.utorrent.com/intl/it/downloads/mac): to download torrents
 - [Logitech Options](https://www.logitech.com/it-it/product/options) to use mouse MX Vertical. See settings in `./logi-options/readme.md`
 - [Run cat](https://apps.apple.com/us/app/runcat/id1429033973?mt=12): the cat runs at the speed according to the CPU usage of your Mac
-- Photoshop: you know. See [here](https://drive.google.com/open?id=1nBiyFOkjIfmYKfxHJfflpJaAbKjLrD0H)
+- Photoshop: you know. See _GDrive - Photoshop/_
 - [Stylus extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) in Chrome: Stylus allows you to easily install themes and skins for many popular sites. See `./chrome/extensions/readme.md`
 - printer drivers
 
