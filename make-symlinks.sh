@@ -3,16 +3,16 @@
 #####################################
 # Set variables
 #####################################
-currentDate=`(date +%Y-%m-%d_%H:%M:%S)`
+
+current_date=`(date +%Y-%m-%d_%H:%M:%S)`
 
 home=~/
 mos=~/mac-os-setup
-backup_dir=~/dotfiles_backup/$currentDate # old dotfiles backup directory
+backup_dir=~/dotfiles_backup/$current_date # old dotfiles backup directory
 app_supp=~/Library/Application\ Support
 preferences=~/Library/Preferences
 vscode=~/Library/Application\ Support/Code/User
 vscode_snippets=~/Library/Application\ Support/Code/User/snippets
-
 
 # echo ${home}
 # echo ${mos}
@@ -21,7 +21,6 @@ vscode_snippets=~/Library/Application\ Support/Code/User/snippets
 # echo ${app_supp}
 # echo ${preferences}
 # echo ${vscode}
-
 
 #####################################
 # Save old dotfiles in backup_dir and create symlinks
@@ -151,5 +150,3 @@ echo -e "      › move old file: $vscode → $backup_dir"
 mv "$vscode"/settings.json $backup_dir
 echo -e "      › create symlink: $mos/vscode → $vscode"
 ln -sf $mos/vscode/settings.json "$vscode"/settings.json
-
-# ## COME BACK INSTRUCTIONS
