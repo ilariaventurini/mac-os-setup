@@ -55,11 +55,11 @@ mv $home/.tab-title.sh $backup_dir
 echo -e "      › create symlink: $mos/zsh → $home"
 ln -sf $mos/zsh/.tab-title.sh $home/.tab-title.sh
 
-echo -e "    › .zshrc.sh"
+echo -e "    › .zshrc"
 echo -e "      › move old file: $home → $backup_dir"
-mv $home/.zshrc.sh $backup_dir
+mv $home/.zshrc $backup_dir
 echo -e "      › create symlink: $mos/zsh → $home"
-ln -sf $mos/zsh/.zshrc.sh $home/.zshrc.sh
+ln -sf $mos/zsh/.zshrc $home/.zshrc
 
 # iTerm2 dotfiles
 #-------------------
@@ -69,7 +69,19 @@ echo -e "    › .iterm2_shell_integration.zsh"
 echo -e "      › move old file: $home → $backup_dir"
 mv $home/.iterm2_shell_integration.zsh $backup_dir
 echo -e "      › create symlink: $mos/iterm → $home"
-ln -sf $mos/iterm/.zshrc.sh $home/.zshrc.sh
+ln -sf $mos/iterm/.iterm2_shell_integration.zsh $home/.iterm2_shell_integration.zsh
+
+echo -e "    › .iterm.sh"
+echo -e "      › move old file: $home → $backup_dir"
+mv $home/.iterm.sh $backup_dir
+echo -e "      › create symlink: $mos/iterm → $home"
+ln -sf $mos/iterm/.iterm.sh $home/.iterm.sh
+
+echo -e "    › .zsh_history"
+echo -e "      › move old file: $home → $backup_dir"
+mv $home/.zsh_history $backup_dir
+echo -e "      › create symlink: $mos/iterm → $home"
+ln -sf $mos/iterm/.zsh_history $home/.zsh_history
 
 echo -e "    › com.googlecode.iterm2.plist"
 echo -e "      › move old file: $preferences → $backup_dir"
@@ -110,40 +122,29 @@ mv $preferences/com.microsoft.VSCode.plist $backup_dir
 echo -e "      › create symlink: $mos/vscode → $preferences"
 ln -sf $mos/vscode/com.microsoft.VSCode.plist $preferences/com.microsoft.VSCode.plist
 
-echo -e "    › javascript.code-snippets"
-echo -e "      › move old file: $vscode_snippets → $backup_dir"
-mv $vscode_snippets/javascript.code-snippets $backup_dir
+echo -e "    › snippets files"
+echo -e "      › move old files: $vscode_snippets → $backup_dir"
+mv "$vscode_snippets"/* $backup_dir
 echo -e "      › create symlink: $mos/vscode/snippets → $vscode_snippets"
-ln -sf $mos/vscode/snippets/javascript.code-snippets $vscode_snippets/javascript.code-snippets
-
-echo -e "    › random.code-snippets"
-echo -e "      › move old file: $vscode_snippets → $backup_dir"
-mv $vscode_snippets/random.code-snippets $backup_dir
-echo -e "      › create symlink: $mos/vscode/snippets → $vscode_snippets"
-ln -sf $mos/vscode/snippets/random.code-snippets $vscode_snippets/random.code-snippets
-
-echo -e "    › react.code-snippets"
-echo -e "      › move old file: $vscode_snippets → $backup_dir"
-mv $vscode_snippets/react.code-snippets $backup_dir
-echo -e "      › create symlink: $mos/vscode/snippets → $vscode_snippets"
-ln -sf $mos/vscode/snippets/react.code-snippets $vscode_snippets/react.code-snippets
-
-echo -e "    › svg.code-snippets"
-echo -e "      › move old file: $vscode_snippets → $backup_dir"
-mv $vscode_snippets/svg.code-snippets $backup_dir
-echo -e "      › create symlink: $mos/vscode/snippets → $vscode_snippets"
-ln -sf $mos/vscode/snippets/svg.code-snippets $vscode_snippets/svg.code-snippets
+echo -e "        › javascript.code-snippets"
+ln -sf $mos/vscode/snippets/javascript.code-snippets "$vscode_snippets"/javascript.code-snippets
+echo -e "        › random.code-snippets"
+ln -sf $mos/vscode/snippets/random.code-snippets "$vscode_snippets"/random.code-snippets
+echo -e "        › react.code-snippets"
+ln -sf $mos/vscode/snippets/react.code-snippets "$vscode_snippets"/react.code-snippets
+echo -e "        › svg.code-snippets"
+ln -sf $mos/vscode/snippets/svg.code-snippets "$vscode_snippets"/svg.code-snippets
 
 echo -e "    › keybindings.json"
 echo -e "      › move old file: $vscode → $backup_dir"
-mv $vscode/keybindings.json $backup_dir
+mv "$vscode"/keybindings.json $backup_dir
 echo -e "      › create symlink: $mos/vscode → $vscode"
-ln -sf $mos/vscode/keybindings.json $vscode/keybindings.json
+ln -sf $mos/vscode/keybindings.json "$vscode"/keybindings.json
 
 echo -e "    › settings.json"
 echo -e "      › move old file: $vscode → $backup_dir"
-mv $vscode/settings.json $backup_dir
+mv "$vscode"/settings.json $backup_dir
 echo -e "      › create symlink: $mos/vscode → $vscode"
-ln -sf $mos/vscode/settings.json $vscode/settings.json
+ln -sf $mos/vscode/settings.json "$vscode"/settings.json
 
 ## COME BACK INSTRUCTIONS
