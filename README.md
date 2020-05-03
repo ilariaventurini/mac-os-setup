@@ -40,7 +40,13 @@ Read the readme and then DO NOT run the `./macos/set-defaults.sh` script.
 At this point you should have installed everything you need, perfect.\
 What we will do now is to use the dotfiles present in this repo to customize the installed applications. We will use symlinks.
 
-Run `./make-symlinks.sh` file.
+Run `./make-symlinks.sh` file:
+
+```shell
+cd mac-os-setup
+bash make-symlinks.sh
+```
+
 This script moves each dotfiles inside a backup directory (`~/dotfiles_backup/YYYY-MM-DD_hh/mm/ss`) and creates a symklink for each dotfile.
 
 **NOTE: Revert**\
