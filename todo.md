@@ -7,3 +7,4 @@
 - [ ] migliorare il README che fa schifo
 - [ ] è normale che ci siano due Application Support folder?
 - [ ] sublime
+- [ ] caricare su git anche i vecchi dotfiles?
