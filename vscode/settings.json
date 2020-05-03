@@ -45,7 +45,7 @@
   // - `${remoteName}`: e.g. SSH
   // - `${dirty}`: a dirty indicator if the active editor is dirty.
   // - `${separator}`: a conditional separator (" - ") that only shows when surrounded by variables with values or static text.
-  "workbench.colorTheme": "Ohlala theme",
+  "workbench.colorTheme": "Ohlala",
   "workbench.iconTheme": "material-icon-theme",
   ///////////////////////////////////////////
   // Window
