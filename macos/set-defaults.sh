@@ -5,16 +5,16 @@
 
 # Do not run this script as root
 if [[ $EUID -eq 0 ]]; then
-    clear
-    echo -ne '\007'
-    echo "ERROR: This script must NOT be run as root" 1>&2
-    sudo -k
-    exit 1
+  clear
+  echo -ne '\007'
+  echo "ERROR: This script must NOT be run as root" 1>&2
+  sudo -k
+  exit 1
 fi
 
 # This Bash script executes several AppleScripts which target other applications like the Finder, 
 # Script Editor, System Events and System Preferences. 
-#Beginning with macOS Mojave, applications that control other applications need to be given explicit 
+# Beginning with macOS Mojave, applications that control other applications need to be given explicit 
 # authority the first time they request to do so. 
 # As it is the Terminal application that ultimately wants to control the other applications by running AppleScripts, 
 # macOS Mojave will prompt the user to grant the Terminal application authority to do so for each individual 
@@ -148,9 +148,6 @@ echo "Configuring System Preferences - Desktop & screensaver..."
 # Bottom left screen corner → Start screen saver
 # defaults write com.apple.dock wvous-bl-corner -int 5
 # defaults write com.apple.dock wvous-bl-modifier -int 0
-
-# Screensaver start after 0 (= never)
-defaults -currentHost write com.apple.screensaver idleTime -int 0
 
 echo "...Desktop & screensaver: done"
 
