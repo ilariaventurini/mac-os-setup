@@ -70,3 +70,8 @@ source $HOME/.tab-title.sh
 #----------------------------------
 source $HOME/.iterm.sh
 
+#----------------------------------
+# !! Scripts to test !!
+#----------------------------------
+# source $HOME/.totest.sh
+

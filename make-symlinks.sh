@@ -48,11 +48,11 @@ mv $home/.functions.sh $backup_dir
 echo -e "      › create symlink: $mos/zsh → $home"
 ln -sf $mos/zsh/.functions.sh $home/.functions.sh
 
-# echo -e "    › .test.sh"
-# echo -e "      › move old file: $home → $backup_dir"
-# mv $home/.test.sh $backup_dir
-# echo -e "      › create symlink: $mos/zsh → $home"
-# ln -sf $mos/zsh/.test.sh $home/.test.sh
+echo -e "    › .totest.sh"
+echo -e "      › move old file: $home → $backup_dir"
+mv $home/.totest.sh $backup_dir
+echo -e "      › create symlink: $mos/zsh → $home"
+ln -sf $mos/zsh/.totest.sh $home/.totest.sh
 
 echo -e "    › .spaceship.sh"
 echo -e "      › move old file: $home → $backup_dir"
