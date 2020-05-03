@@ -1,0 +1,201 @@
+[
+  // esc
+  {
+    "type": "escape",
+    "title": "esc",
+    "width": 120,
+    "align": "left",
+    "bordered": true
+  },
+  
+  // exit touchbar
+  {
+    "type": "exitTouchbar",
+    "title": "",
+    "image": {
+      "filePath": "~/Library/Application Support/MTMR/close.png"
+    },
+    "width": 38,
+    "align": "left",
+    "bordered": true
+  },
+
+  // brightness - and +
+  { 
+    "type": "brightnessDown", 
+    "width": 38, 
+    "align": "left",
+    "bordered": false 
+  },
+  { 
+    "type": "brightnessUp", 
+    "width": 38, 
+    "align": "left",
+    "bordered": false 
+  },
+
+  // keyboard brightness - and +
+  {
+    "type": "illuminationDown",
+    "width": 38,
+    "align": "left",
+    "bordered": false
+  },
+  {
+    "type": "illuminationUp",
+    "width": 38,
+    "align": "left",
+    "bordered": false
+  },
+
+  // Spotify
+  {
+    "type": "appleScriptTitledButton",
+    "align": "left",
+    "source": {
+      "filePath": "~/Library/Application Support/MTMR/spotify-now-playing.scpt"
+    },
+    "action": "appleScript",
+    "actionAppleScript": {
+      "filePath": "~/Library/Application Support/MTMR/spotify-play-pause.scpt"
+    },
+    // "longAction": "openUrl",
+    "refreshInterval": 1,
+    "image": {
+      "filePath": "~/Library/Application Support/MTMR/spotify-icon.png"
+    }
+  },
+
+  // keys group
+  {
+    "type": "group",
+    "align": "left",
+    "title": "keys",
+    "width": 28,
+    "items": [
+      // esc
+      {
+        "type": "escape",
+        "title": "esc",
+        "width": 120,
+        "align": "left",
+        "bordered": true
+      },
+
+      // close group
+      {
+        "type": "close",
+        "width": 28,
+        "align": "left",
+        "bordered": true
+      },
+
+      // F1 - F8 keys
+      {
+        "type": "staticButton",
+        "title": "F1",
+        "action": "keyPress",
+        "keycode": 122,
+        "width": 60,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F2",
+        "action": "keyPress",
+        "keycode": 120,
+        "width": 60,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F3",
+        "action": "keyPress",
+        "keycode": 99,
+        "width": 60,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F4",
+        "action": "keyPress",
+        "keycode": 118,
+        "width": 60,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F5",
+        "action": "keyPress",
+        "keycode": 96,
+        "width": 60,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F6",
+        "action": "keyPress",
+        "keycode": 97,
+        "width": 60,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F7",
+        "action": "keyPress",
+        "keycode": 98,
+        "width": 60,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F8",
+        "action": "keyPress",
+        "keycode": 100,
+        "width": 60,
+        "align": "left"
+      }
+    ]
+  },
+
+  // music
+  {
+    "type": "previous",
+    "width": 38,
+    "align": "right",
+    "bordered": false
+  },
+  {
+    "type": "play",
+    "source": {
+      "filePath": "~/Library/Application Support/MTMR/pause-or-play-open.scpt"
+    },
+    "width": 38,
+    "align": "right",
+    "bordered": false
+  },
+  {
+    "type": "next",
+    "width": 38,
+    "align": "right",
+    "bordered": false
+  },
+  {
+    "type": "mute",
+    "width": 38,
+    "align": "right",
+    "bordered": false
+  },
+  {
+    "type": "volumeDown",
+    "width": 38,
+    "align": "right",
+    "bordered": false
+  },
+  {
+    "type": "volumeUp",
+    "width": 38,
+    "align": "right",
+    "bordered": false
+  }
+]
