@@ -417,10 +417,8 @@ echo -e "        › Invert colours: false"
 echo -e "        › Reduce motion: false"
 
 echo -e "        › Increase contrast: false"
-defaults write com.apple.universalaccess increaseContrast -bool false
 
 echo -e "        › Reduce transparency: false"
-defaults write com.apple.universalaccess reduceTransparency -bool false
 
 echo -e "        › Differentiate without colour: false"
 echo -e "        › Display contrast: normal"
