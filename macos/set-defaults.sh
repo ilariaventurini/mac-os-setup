@@ -1,5 +1,28 @@
 #!/bin/bash
 
+#-------------------------------------
+# Backup
+#-------------------------------------
+
+current_date=`(date +%Y-%m-%d_%Hh%Mm%Ss)`
+
+# Set variables
+backup_dir=~/mac-os-setup-backup/macos/
+preferences=~/Library/Preferences
+
+# Make a backup of defaults and preferences
+echo -e "\nFirst of all, I do a backup, just in case..."
+echo -e "Backup folder is $backup_dir"
+echo -e "  › save current defaults"
+echo -e "  › copy all $preferences files"
+mkdir -p $backup_dir
+defaults read > $backup_dir/defaults_$current_date.json
+cp -a $preferences/. $backup_dir/Preferencess_$current_date
+
+#-------------------------------------
+# Setting macOS defaults
+#-------------------------------------
+
 echo -e "\nSetting macOS defaults..."
 
 # Check that you are not running this script as root
@@ -1196,7 +1219,7 @@ defaults write com.apple.Safari WebAutomaticSpellingCorrectionEnabled -bool true
 # Kill affected applications
 #-------------------------------------
 
-echo -e "\nDone :)"
+echo -e "\nDone!"
 
 echo -e "\nKilling some open applications in order to take effect..."
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" "Terminal" "Transmission"; do
@@ -1206,5 +1229,4 @@ done
 echo -e "Revoke sudo privileges..."
 sudo -k
 
-echo -e "\nNote that some of these changes require a logout/restart to take effect."
-echo -e "\nBye!"
+echo -e "\nNote that some of these changes require a logout/restart to take effect. Bye bye :)"
