@@ -16,6 +16,7 @@ Read the readme files and run these scripts:
 - `./macos/set-defaults.sh`
 
 Each script:
+
 - makes a backup of the current dotfiles
 - installs things
 - creates symlinks in order to use the dotfiles present in this repo to customize the installed applications.
