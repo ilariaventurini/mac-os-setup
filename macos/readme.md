@@ -3,7 +3,7 @@
 Run `set-defaults.sh` script to setup some macos settings:
 
 ```bash
-cd mac-os-setup/macos
+cd ~/mac-os-setup/macos
 
 # run the script saving the output both on console and in a txt file
 bash set-defaults.sh 2>&1 | tee ~/mac-os-setup-backup/macos/set-defaults-results_$(date +%Y-%m-%d_%H%M%S).txt
