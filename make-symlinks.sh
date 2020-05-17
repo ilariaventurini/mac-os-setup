@@ -24,46 +24,6 @@ mkdir -p $backup_dir
 
 echo -e "\n› Move old dotfiles to $backup_dir and create symlinks..."
 
-# Zsh dotfiles
-#-------------------
-echo -e "  › Zsh dotfiles"
-
-echo -e "    › .aliases.sh"
-echo -e "      › move old file: $home → $backup_dir"
-mv $home/.aliases.sh $backup_dir
-echo -e "      › create symlink: $mos/zsh → $home"
-ln -sf $mos/zsh/.aliases.sh $home/.aliases.sh
-
-echo -e "    › .functions.sh"
-echo -e "      › move old file: $home → $backup_dir"
-mv $home/.functions.sh $backup_dir
-echo -e "      › create symlink: $mos/zsh → $home"
-ln -sf $mos/zsh/.functions.sh $home/.functions.sh
-
-echo -e "    › .totest.sh"
-echo -e "      › move old file: $home → $backup_dir"
-mv $home/.totest.sh $backup_dir
-echo -e "      › create symlink: $mos/zsh → $home"
-ln -sf $mos/zsh/.totest.sh $home/.totest.sh
-
-echo -e "    › .spaceship.sh"
-echo -e "      › move old file: $home → $backup_dir"
-mv $home/.spaceship.sh $backup_dir
-echo -e "      › create symlink: $mos/zsh → $home"
-ln -sf $mos/zsh/.spaceship.sh $home/.spaceship.sh
-
-echo -e "    › .tab-title.sh"
-echo -e "      › move old file: $home → $backup_dir"
-mv $home/.tab-title.sh $backup_dir
-echo -e "      › create symlink: $mos/zsh → $home"
-ln -sf $mos/zsh/.tab-title.sh $home/.tab-title.sh
-
-echo -e "    › .zshrc"
-echo -e "      › move old file: $home → $backup_dir"
-mv $home/.zshrc $backup_dir
-echo -e "      › create symlink: $mos/zsh → $home"
-ln -sf $mos/zsh/.zshrc $home/.zshrc
-
 # MTMR dotfiles
 #-------------------
 

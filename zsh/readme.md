@@ -31,13 +31,27 @@ The **.zshrc** file (or just _zshrc file_) is a file that _zsh_ reads when it st
 
 ### Install
 
-Run `install.sh` script. It will install:
+Run `install.sh` script:
 
-- zsh
-- oh-my-zsh
-- zsh-autosuggestions plugin
-- zsh-completions plugin
-- zsh-syntax-highlighting plugin
-- spaceships-prompt theme
+```bash
+cd ~/mac-os-setup/zsh
+bash install.sh
+```
 
-If you want to add o remove something, change the script.
+It will:
+
+- install:
+  - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#macos)
+  - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+  - [zsh-autosuggestions plugin](https://github.com/zsh-users/zsh-autosuggestions)
+  - [zsh-completions plugin](https://github.com/zsh-users/zsh-completions)
+  - [zsh-syntax-highlighting plugin](https://github.com/zsh-users/zsh-syntax-highlighting)
+  - [spaceships-prompt theme](https://github.com/denysdovhan/spaceship-prompt)
+- backup your git dotfiles:
+  - `~/.aliases.sh`
+  - `~/.functions.sh`
+  - `~/.spaceship.sh`
+  - `~/.tab-title.sh`
+  - `~/.totest.sh`: temporary file
+  - `~/.zshrc`
+- replace them with the ones in this repo and then create symlinks.
