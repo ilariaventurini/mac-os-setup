@@ -17,7 +17,7 @@ echo -e "\n› Check if Fork is installed..."
 if [! -d '/Applications/Fork.app' -a ! -d "$HOME/Applications/Fork.app"]
 then
   echo -e '  Fork is not installed. Installing...'
-  brew install fork
+  brew cask install fork
 fi
 echo -e "  Fork already installed."
 echo -e "  ➜ Ok"
