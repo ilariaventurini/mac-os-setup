@@ -29,38 +29,3 @@ echo -e "\n› Move old dotfiles to $backup_dir and create symlinks..."
 
 echo -e "  › MTMR dotfiles"
 
-echo -e "    › items.json"
-echo -e "      › move old file: $mtmr → $backup_dir"
-mv "$mtmr"/items.json $backup_dir
-echo -e "      › create symlink: $mos/mtmr → $mtmr"
-ln -sf $mos/mtmr/items.json "$mtmr"/items.json
-
-echo -e "    › close.png"
-echo -e "      › move old file: $mtmr → $backup_dir"
-mv "$mtmr"/close.png $backup_dir
-echo -e "      › create symlink: $mos/mtmr → $mtmr"
-ln -sf $mos/mtmr/close.png "$mtmr"/close.png
-
-echo -e "    › spotify-icon.png"
-echo -e "      › move old file: $mtmr → $backup_dir"
-mv "$mtmr"/spotify-icon.png $backup_dir
-echo -e "      › create symlink: $mos/mtmr → $mtmr"
-ln -sf $mos/mtmr/spotify-icon.png "$mtmr"/spotify-icon.png
-
-echo -e "    › pause-or-play-open.scpt"
-echo -e "      › move old file: $mtmr → $backup_dir"
-mv "$mtmr"/pause-or-play-open.scpt $backup_dir
-echo -e "      › create symlink: $mos/mtmr → $mtmr"
-ln -sf $mos/mtmr/pause-or-play-open.scpt "$mtmr"/pause-or-play-open.scpt
-
-echo -e "    › spotify-now-playing.scpt"
-echo -e "      › move old file: $mtmr → $backup_dir"
-mv "$mtmr"/spotify-now-playing.scpt $backup_dir
-echo -e "      › create symlink: $mos/mtmr → $mtmr"
-ln -sf $mos/mtmr/spotify-now-playing.scpt "$mtmr"/spotify-now-playing.scpt
-
-echo -e "    › spotify-play-pause.scpt"
-echo -e "      › move old file: $mtmr → $backup_dir"
-mv "$mtmr"/spotify-play-pause.scpt $backup_dir
-echo -e "      › create symlink: $mos/mtmr → $mtmr"
-ln -sf $mos/mtmr/spotify-play-pause.scpt "$mtmr"/spotify-play-pause.scpt
