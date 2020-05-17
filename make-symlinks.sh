@@ -4,7 +4,7 @@
 # Set variables
 #####################################
 
-current_date=`(date +%Y-%m-%d_%H:%M:%S)`
+current_date=`(date +%Y-%m-%d_%H%M%S)`
 
 home=~/
 mos=~/mac-os-setup
@@ -14,14 +14,6 @@ preferences=~/Library/Preferences
 vscode=~/Library/Application\ Support/Code/User
 vscode_snippets=~/Library/Application\ Support/Code/User/snippets
 mtmr=~/Library/Application\ Support/MTMR
-
-# echo ${home}
-# echo ${mos}
-# echo ${currentDate}
-# echo ${backup_dir}
-# echo ${app_supp}
-# echo ${preferences}
-# echo ${vscode}
 
 #####################################
 # Save old dotfiles in backup_dir and create symlinks
@@ -99,23 +91,6 @@ echo -e "      › move old file: $preferences → $backup_dir"
 mv $preferences/com.googlecode.iterm2.plist $backup_dir
 echo -e "      › create symlink: $mos/iterm → $preferences"
 ln -sf $mos/iterm/com.googlecode.iterm2.plist $preferences/com.googlecode.iterm2.plist
-
-
-# Git dotfiles
-#-------------------
-echo -e "  › Git dotfiles"
-
-echo -e "    › .gitconfig"
-echo -e "      › move old file: $home → $backup_dir"
-mv $home/.gitconfig $backup_dir
-echo -e "      › create symlink: $mos/git → $home"
-ln -sf $mos/git/.gitconfig $home/.gitconfig
-
-echo -e "    › .gitignore_global"
-echo -e "      › move old file: $home → $backup_dir"
-mv $home/.gitignore_global $backup_dir
-echo -e "      › create symlink: $mos/git → $home"
-ln -sf $mos/git/.gitignore_global $home/.gitignore_global
 
 # VS Code dotfiles
 #-------------------
