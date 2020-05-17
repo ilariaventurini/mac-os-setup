@@ -6,7 +6,7 @@ Run `set-defaults.sh` script to setup some macos settings:
 cd mac-os-setup/macos
 
 # run the script saving the output both on console and in a txt file
-bash set-defaults.sh 2>&1 | tee ~/mac-os-setup-backup/macos/set-defaults-results_$(date +%Y-%m-%d_%Hh%Mm%Ss).txt
+bash set-defaults.sh 2>&1 | tee ~/mac-os-setup-backup/macos/set-defaults-results_$(date +%Y-%m-%d_%H%M%S).txt
 ```
 
 Everytime you run the script, a backup is made. Check it in `~/mac-os-setup-backup/macos/`.
