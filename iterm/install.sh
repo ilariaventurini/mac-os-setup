@@ -18,7 +18,6 @@ if [! -d '/Applications/iTerm.app' -a ! -d "$HOME/Applications/iTerm.app"]
 then
   echo -e '  iTerm2 is not installed. Installing...'
   brew cask install iTerm2
-  echo "...done"
 fi
 echo -e "  iTerm2 already installed."
 echo -e "  ➜ Ok"

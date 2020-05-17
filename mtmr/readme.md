@@ -2,6 +2,6 @@
 
 Repo [here](https://github.com/toxblh/mtmr)
 
-## ⚙️ Install 
+## Install 
 
 Run `install.sh` script to install MRMT.
