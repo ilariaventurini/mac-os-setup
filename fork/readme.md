@@ -1,6 +1,6 @@
 # 🍴 Fork
 
-## ⚙️ Install
+## Install
 
 Run `install.sh` script:
 

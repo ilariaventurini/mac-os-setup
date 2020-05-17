@@ -1,6 +1,6 @@
 # 🏷 Git
 
-## ⚙️ Install
+## Install
 
 Run `install.sh` script:
 
