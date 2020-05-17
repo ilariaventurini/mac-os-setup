@@ -14,7 +14,7 @@ backup_dir=~/mac-os-setup-backup/fork/fork_$current_date
 echo -e "\n› Check if Fork is installed..."
 
 # Check if Fork is installed
-if [! -d '/Applications/Fork.app' -a ! -d "$HOME/Applications/Fork.app"]
+if [ ! -d '/Applications/Fork.app' -a ! -d "$HOME/Applications/Fork.app" ]
 then
   echo -e '  Fork is not installed. Installing...'
   brew cask install fork

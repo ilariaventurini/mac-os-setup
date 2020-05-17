@@ -14,7 +14,7 @@ backup_dir=~/mac-os-setup-backup/iterm/iterm_$current_date
 
 echo -e "\n› Check if iTerm2 is installed..."
 
-if [! -d '/Applications/iTerm.app' -a ! -d "$HOME/Applications/iTerm.app"]
+if [ ! -d '/Applications/iTerm.app' -a ! -d "$HOME/Applications/iTerm.app" ]
 then
   echo -e '  iTerm2 is not installed. Installing...'
   brew cask install iTerm2

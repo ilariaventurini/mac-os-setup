@@ -16,7 +16,7 @@ spotify=~/Library/Application\ Support/Code/Spotify
 echo -e "\n› Check if Spotify is installed..."
 
 # Check if Spotify is installed
-if [! -d '/Applications/Spotify.app' -a ! -d "$HOME/Applications/Spotify.app"]
+if [ ! -d '/Applications/Spotify.app' -a ! -d "$HOME/Applications/Spotify.app" ]
 then
   echo -e '  Spotify is not installed. Installing...'
   brew cask install spotify

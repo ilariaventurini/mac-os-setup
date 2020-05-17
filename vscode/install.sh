@@ -16,7 +16,7 @@ vscode_snippets=~/Library/Application\ Support/Code/User/snippets
 
 echo -e "\n› Check if Visual Studio Code is installed..."
 
-if [! -d '/Applications/Visual Studio Code.app' -a ! -d "$HOME/Applications/Visual Studio Code.app"]
+if [ ! -d '/Applications/Visual Studio Code.app' -a ! -d "$HOME/Applications/Visual Studio Code.app" ]
 then
   echo -e '  Visual Studio Code is not installed. Installing...'
   brew cask install visual-studio-code
@@ -24,7 +24,7 @@ fi
 echo -e "  Visual Studio Code already installed."
 echo -e "  ➜ Ok"
 
-echo "\n› Installing extensions listed in ~/mac-os-setup/vscode/extensions.txt..."
+echo -e "\n› Installing extensions listed in ~/mac-os-setup/vscode/extensions.txt..."
 xargs -n 1 code --install-extension < ~/mac-os-setup/vscode/extensions.txt
 
 #-------------------------------------
