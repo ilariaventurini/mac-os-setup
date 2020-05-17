@@ -13,6 +13,7 @@ Read the readme files and run these scripts:
 - `./git/install.sh`
 - `./fork/install.sh`
 - `./vscode/install.sh`
+- `./spotify/install.sh`
 - `./macos/set-defaults.sh`
 
 Each script:
@@ -34,5 +35,4 @@ Unfortunately you have to install some things manually:
 - [Logitech Options](https://www.logitech.com/it-it/product/options) to use mouse MX Vertical. See settings in `./logi-options/readme.md`
 - [Run cat](https://apps.apple.com/us/app/runcat/id1429033973?mt=12): the cat runs at the speed according to the CPU usage of your Mac
 - Photoshop: you know. See _GDrive - Photoshop/_
-- [Stylus extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) in Chrome: Stylus allows you to easily install themes and skins for many popular sites. See `./chrome/extensions/readme.md`
-- printer drivers.
+- [Stylus extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) in Chrome: Stylus allows you to easily install themes and skins for many popular sites. See `./chrome/extensions/readme.md`.
