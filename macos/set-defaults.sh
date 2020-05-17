@@ -4,7 +4,7 @@
 # Backup
 #-------------------------------------
 
-current_date=`(date +%Y-%m-%d_%Hh%Mm%Ss)`
+current_date=`(date +%Y-%m-%d_%H%M%S)` # ie 2020-17-05_100456
 
 # Set variables
 backup_dir=~/mac-os-setup-backup/macos/
