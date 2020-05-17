@@ -1,15 +1,34 @@
-# 🌰 iTerm
+# 🖇 iTerm
 
-## ⚙️ Install
+## Install
 
-Run `install.sh` script to install iTerm2.
+Run `install.sh` script:
+
+```bash
+cd ~/mac-os-setup/iterm
+bash install.sh
+```
+
+It will:
+
+- install iTerm2 using brew
+- backup your git dotfiles:
+  - `~/.iterm2_shell_integration.zsh`
+  - `~/.iterm.sh`
+  - `~/.zsh_history`
+  - `~/Library/Preferences/com.googlecode.iterm2.plist`
+- replace them with the ones in this repo and then create symlinks.
+
+## Install manually
+
+### Theme
 
 To import the color theme:
 
 - select `Preferences... -> Profiles -> Colors`
 - then at the bottom right select `Color presents -> Import... -> chose ohlala.itermcolors`
 
-## 🧷 Settings
+### Settings
 
 Preferences:
 
