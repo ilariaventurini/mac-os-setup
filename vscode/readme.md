@@ -1,16 +1,36 @@
 # 🐛 VS Code
 
-## ⚙️ Install
+## Install
 
-Run `install.sh` script. It will install:
+Run `install.sh` script:
 
-- VS Code
-- extensions listed in `extensions.txt` file
+```bash
+cd ~/mac-os-setup/vscode
+bash install.sh
+```
 
-## 🧷 Settings
+It will:
 
-These settings should already be set having previously copied the files listed above.
+- install VS Code using brew
+- install extensions listed in `/vscode/extensions.txt`
+- backup your git dotfiles:
+  - `~/.vsce`
+  - `~/Library/Preferences/com.microsoft.VSCode.plist`
+  - snippets files in `~/Library/Application Support/Code/User/snippets`
+  - `~/Library/Application Support/Code/User/.keybindings.json`
+  - `~/Library/Application Support/Code/User/.settings.json`
+- replace them with the ones in this repo and then create symlinks.
+
+## Install manually
+
+These settings should already be set having previously run the script.
 Anyway, if you need them, they are:
+
+### Extensions
+
+Install manually the extension listed in `/vscode/extensions.txt` file.
+
+### Settings
 
 Preferences:
 
