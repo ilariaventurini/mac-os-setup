@@ -8,7 +8,7 @@
     "bordered": true
   },
   
-  // exit touchbar
+  // exit MTMR touchbar
   {
     "type": "exitTouchbar",
     "title": "",
@@ -34,7 +34,7 @@
     "bordered": false 
   },
 
-  // keyboard brightness - and +
+  // keyboard illumination - and +
   {
     "type": "illuminationDown",
     "width": 38,
@@ -55,10 +55,10 @@
     "source": {
       "filePath": "~/Library/Application Support/MTMR/spotify-now-playing.scpt"
     },
-    "action": "appleScript",
-    "actionAppleScript": {
-      "filePath": "~/Library/Application Support/MTMR/spotify-play-pause.scpt"
-    },
+    // "action": "appleScript",
+    // "actionAppleScript": {
+    //   "filePath": "~/Library/Application Support/MTMR/spotify-play-pause.scpt"
+    // },
     // "longAction": "openUrl",
     "refreshInterval": 1,
     "image": {

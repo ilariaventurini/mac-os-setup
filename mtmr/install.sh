@@ -6,7 +6,7 @@ current_date=`(date +%Y-%m-%d_%H%M%S)`
 home=~/
 mos=~/mac-os-setup
 preferences=~/Library/Preferences
-backup_dir=~/mac-os-setup-backup/mtmt/mtmt_$current_date
+backup_dir=~/mac-os-setup-backup/mtmr/mtmr_$current_date
 mtmr=~/Library/Application\ Support/MTMR
 
 #-------------------------------------

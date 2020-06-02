@@ -1,5 +1,3 @@
-if application "iTunes" is running then
-  tell application "iTunes" to playpause
-else
+if application "Spotify" is running then
   tell application "Spotify" to playpause
 end if
