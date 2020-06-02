@@ -13,7 +13,6 @@ backup_dir=~/mac-os-setup-backup/git/git_$current_date
 
 echo -e "\n› Check if git is installed..."
 
-# Check if git is installed
 command -v git >/dev/null 2>&1 || { 
   echo >&2 "  Git is not installed. Installing...";
   brew install git
