@@ -1,3 +1,10 @@
 [user]
 	name = Ilaria Venturini
 	email = venturini.ila@gmail.com
+[core]
+	excludesfile = /Users/ilariaventurini/.gitignore_global
+	pager = cat
+[alias]
+  up = !"git fetch --prune --progress && git fetch origin master:master && git rebase --autostash origin/master"
+[merge]
+	conflictstyle = merge
