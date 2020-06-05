@@ -43,12 +43,6 @@ mv $home/.iterm.sh $backup_dir
 echo -e "    › create symlink: $mos/iterm → $home"
 ln -sf $mos/iterm/.iterm.sh $home/.iterm.sh
 
-echo -e "  › .zsh_history"
-echo -e "    › move old file: $home → $backup_dir"
-mv $home/.zsh_history $backup_dir
-echo -e "    › create symlink: $mos/iterm → $home"
-ln -sf $mos/iterm/.zsh_history $home/.zsh_history
-
 echo -e "  › com.googlecode.iterm2.plist"
 echo -e "    › move old file: $preferences → $backup_dir"
 mv $preferences/com.googlecode.iterm2.plist $backup_dir
