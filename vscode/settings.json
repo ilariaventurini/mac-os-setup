@@ -66,6 +66,8 @@
   // Prettier
   //----------------------
   "prettier.requireConfig": true,
+  "prettier.semi": false,
+  "prettier.packageManager": "yarn",
   //----------------------
   // Typescript
   //----------------------
