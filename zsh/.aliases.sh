@@ -41,6 +41,7 @@ alias documents='cd ~/Documents/'
 alias applications='cd ~/Applications/'
 alias iv='cd ~/'
 alias home='cd ~/'
+# alias flutter='cd ~/flutter/'
 
 # Get week number
 alias week='date +%V'
