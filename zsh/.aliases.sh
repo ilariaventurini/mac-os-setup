@@ -116,3 +116,9 @@ alias vscode-extensions-save='code --list-extensions > ~/extensions.txt && echo 
 
 # Install extensions listed in ~/extensions.txt
 alias vscode-extensions-install='xargs -n 1 code --install-extension < ~/extensions.txt'
+
+#-----------------
+# Python
+#-----------------
+
+alias python=/usr/bin/python3

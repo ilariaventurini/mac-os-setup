@@ -76,12 +76,6 @@ source $HOME/.iterm.sh
 # source $HOME/.totest.sh
 
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/IlariaVenturini/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/IlariaVenturini/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/IlariaVenturini/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/IlariaVenturini/google-cloud-sdk/completion.zsh.inc'; fi
-
 #----------------------------------
 # Android Studio
 #----------------------------------
@@ -90,13 +84,33 @@ export PATH=$PATH:$ANDROID_HOME/emulator/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+# export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/<your-flutter-path>/bin
 
 #----------------------------------
 # Flutter
 #----------------------------------
 export PATH="$PATH:$HOME/flutter/bin"
+# export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+
 
 #----------------------------------
 # Java
 #----------------------------------
-export JAVA_HOME=$(/usr/libexec/java_home)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#----------------------------------
+# Google Cloud SDK
+#----------------------------------
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ilariaventurini/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/ilariaventurini/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ilariaventurini/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/ilariaventurini/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="/usr/lib/google-cloud-sdk/bin:$PATH"
+

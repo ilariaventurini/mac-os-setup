@@ -1,9 +1,5 @@
 {
-  ///////////////////////////////////////////
-  // Editor
-  ///////////////////////////////////////////
-  // Controls the font size in pixels.
-  "editor.fontSize": 12,
+  "files.eol": "\n",
   // Enables tab completions.
   //  - on: Tab complete will insert the best matching suggestion when pressing tab.
   //  - off: Disable tab completions.
@@ -13,12 +9,10 @@
   "editor.tabSize": 2,
   // Controls whether the editor should automatically format the pasted content. A formatter must be available and the formatter should be able to format a range in a document.
   "editor.formatOnPaste": true,
-  // Format a file on save. A formatter must be available, the file must not be saved after delay, and the editor must not be shutting down.
-  "editor.formatOnSave": true,
-  // Controls whether the editor should automatically format the line after typing.
-  "editor.formatOnType": true,
   // Controls whether the minimap is shown.
   "editor.minimap.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.suggest.showStatusBar": false,
   ///////////////////////////////////////////
   // Workbench
   ///////////////////////////////////////////
@@ -47,46 +41,45 @@
   // - `${separator}`: a conditional separator (" - ") that only shows when surrounded by variables with values or static text.
   "workbench.colorTheme": "Ohlala",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.pinnedTabSizing": "compact", // a pinned tab will only show as icon or first letter of the editor label
   ///////////////////////////////////////////
   // Window
   ///////////////////////////////////////////
   "window.title": "${activeEditorLong}${separator}${rootName}",
+  "window.confirmBeforeClose": "always",
   ///////////////////////////////////////////
-  // Terminal
+  // Code languages
   ///////////////////////////////////////////
-  // Controls how the terminal is rendered.
-  //  - auto: Let VS Code guess which renderer to use.
-  //  - canvas: Use the standard GPU/canvas-based renderer.
-  //  - dom: Use the fallback DOM-based renderer.
-  "terminal.integrated.rendererType": "dom",
-  ///////////////////////////////////////////
-  // Extensions
-  ///////////////////////////////////////////
-  //----------------------
-  // Prettier
-  //----------------------
-  "prettier.requireConfig": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    // auto save
+    "editor.formatOnSave": true,
+  },
+  "markdown.preview.fontSize": 13,
+  "markdown.preview.lineHeight": 1.3,
   "prettier.semi": false,
-  "prettier.packageManager": "yarn",
   //----------------------
   // Typescript
   //----------------------
-  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   //----------------------
-  // Liveshare
-  //----------------------
-  "liveshare.featureSet": "insiders",
-  "liveshare.showInStatusBar": "whileCollaborating",
-  //----------------------
   // VS Code Google translate
   //----------------------
-  "vscodeGoogleTranslate.preferredLanguage": "en",
+  "vscodeGoogleTranslate.preferredLanguage": "English",
   //----------------------
-  // VS Code Spotify
+  // Spotify
   //----------------------
-  "spotify.showLyricsButton": false,
   "spotify.showMuteUnmuteVolumeButton": false,
   "spotify.volumeUpButtonPriority": 0,
   "spotify.showSignOutButton": false,
@@ -100,4 +93,167 @@
   "spotify.toggleRepeatingButtonPriority": 0,
   "spotify.toggleShufflingButtonPriority": 0,
   "spotify.volumeDownButtonPriority": 0,
+  //----------------------
+  // Markdownlint
+  //----------------------
+  "markdownlint.config": {
+    "default": true,
+    "MD004": false,
+    "MD007": false,
+    // "MD007": {
+    //   "indent": 2
+    // },
+    "MD022": false,
+    "MD025": false,
+    "MD031": false,
+    "MD032": false,
+    "MD033": false,
+    "MD034": false,
+    "MD041": false,
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.views.branches.branches.layout": "list",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.vueIndentScriptAndStyle": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "svelte.enable-ts-plugin": true,
+  "dart.showInspectorNotificationsForWidgetErrors": false,
+  "terminal.integrated.scrollback": 1000000,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "editor.largeFileOptimizations": false,
+  "files.insertFinalNewline": true,
+  "peacock.affectStatusBar": false,
+  "peacock.favoriteColors": [
+    {
+      "name": "Ohlala green",
+      "value": "#37E7AC"
+    },
+    {
+      "name": "Ohlala cyan",
+      "value": "#51FBDE"
+    },
+    {
+      "name": "Ohlala blue",
+      "value": "#00B2FF"
+    },
+    {
+      "name": "Ohlala purple",
+      "value": "#9A89B4"
+    },
+    {
+      "name": "Ohlala lavender",
+      "value": "#9B6DFF"
+    },
+    {
+      "name": "Ohlala pink",
+      "value": "#FF5CD3"
+    },
+    {
+      "name": "Ohlala rose",
+      "value": "#FF6B9D"
+    },
+    {
+      "name": "Ohlala orange",
+      "value": "#FF9970"
+    },
+    {
+      "name": "Ohlala yellow",
+      "value": "#FED604"
+    },
+    {
+      "name": "Ohlala gray-01",
+      "value": "#D9E0E8"
+    },
+    {
+      "name": "Ohlala gray-02",
+      "value": "#808182"
+    },
+    {
+      "name": "Ohlala gray-09",
+      "value": "#1F2330"
+    },
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "editor.formatOnType": true,
+  "go.toolsManagement.autoUpdate": true,
+  "prettier.requireConfig": true,
+  "editor.formatOnSave": true,
+  "update.mode": "manual",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "peacock.affectActivityBar": false,
+  "peacock.affectSashHover": false,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "window.zoomLevel": 1
 }
