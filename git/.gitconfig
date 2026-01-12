@@ -5,7 +5,7 @@
 	excludesfile = /Users/ilariaventurini/.gitignore_global
 	pager = cat
 [alias]
-  up = !"git fetch --prune --progress && git fetch origin master:master && git rebase --autostash origin/master"
+  up = !"git fetch --prune --progress && git fetch origin main:main && git rebase --autostash origin/main"
 [merge]
 	conflictstyle = diff3
 [filter "lfs"]
@@ -21,3 +21,6 @@
 	postBuffer = 157286400
 [pull]
 	rebase = true
+[credential]
+	helper = osxkeychain
+	useHttpPath = true

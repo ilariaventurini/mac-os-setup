@@ -86,6 +86,8 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 # export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 # export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/<your-flutter-path>/bin
+export ANDROID_SDK="$HOME/Library/Android/sdk"
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/cmdline-tools:${ANDROID_SDK}/cmdline-tools/latest/bin:${ANDROID_SDK}/platform-tools:$PATH
 
 #----------------------------------
 # Flutter
@@ -97,10 +99,13 @@ export PATH="$PATH:$HOME/flutter/bin"
 #----------------------------------
 # Java
 #----------------------------------
+export JAVA_HOME=/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home
+# export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.13/libexec/openjdk.jdk/Contents/Home
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 #----------------------------------
 # Google Cloud SDK
@@ -113,4 +118,19 @@ if [ -f '/Users/ilariaventurini/google-cloud-sdk/path.zsh.inc' ]; then source '/
 if [ -f '/Users/ilariaventurini/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/ilariaventurini/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="/usr/lib/google-cloud-sdk/bin:$PATH"
+
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/ilariaventurini/.dart-cli-completion/zsh-config.zsh ]] && . /Users/ilariaventurini/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+#----------------------------------
+# Ruby
+#----------------------------------
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+
+# To enable auto-switching of Rubies specified by .ruby-version files
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+
 

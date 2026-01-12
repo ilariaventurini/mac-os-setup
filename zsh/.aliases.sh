@@ -10,102 +10,75 @@
 # Network
 #-----------------
 
-# Ip address
-alias ip="echo Your ip is; dig +short myip.opendns.com @resolver1.opendns.com;"
+# Ping Google 5 times
+alias ping-google-5-times="ping -c 5 google.com"
 
 #-----------------
 # General aliases
 #-----------------
 
-alias ka9='killall -9'
-alias k9='kill -9'
+# Get date
+alias get-now-date-time='date +"%Y-%m-%d %T"'
+
+# Show epoch timestamp
+alias get-epoch-timestamp='date +"%s"'
+
+alias force-kill-by-process-name='killall -9'
+alias force-kill-by-process-id='kill -9'
 
 # Show/hide hidden files in Finder
-alias showhiddenfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hidehiddenfiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
-# Hide/show all desktop icons (useful when presenting)
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
-# Lock the screen
-alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-# Start the screensaver
-alias screensaver="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
+alias show-hidden-files="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide-hidden-files="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Directory shortcuts
-alias projects='cd ~/Projects/'
-alias desktop='cd ~/Desktop/'
-alias downloads='cd ~/Downloads/'
-alias documents='cd ~/Documents/'
-alias applications='cd ~/Applications/'
-alias iv='cd ~/'
-alias home='cd ~/'
-# alias flutter='cd ~/flutter/'
+alias go-to-desktop='cd ~/Desktop/'
+alias go-to-downloads='cd ~/Downloads/'
+alias go-to-documents='cd ~/Documents/'
+alias go-to-applications='cd ~/Applications/'
+alias go-to-ilariaventurini='cd ~/'
+alias go-to-home='cd ~/'
 
 # Get week number
-alias week='date +%V'
+alias get-week-number='date +%V'
 
 # Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias recursively-delete-ds-store-files="find . -type f -name '*.DS_Store' -ls -delete"
 
-# Empty the Trash on all mounted volumes and the main HDD.
-# Also, clear Apple’s System Logs to improve shell startup speed.
-# Finally, clear download history from quarantine. https://mths.be/bum
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
-
-# Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
-
-# Stopwatch
-alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
-
-# Pipe my public key to my clipboard.
-alias pubkey="more ~/.ssh/id_ns_rsa.pub | xclip -selection clipboard | echo '=> Public key copied to pasteboard.'"
-
-# Pipe my private key to my clipboard.
-alias prikey="more ~/.ssh/id_ns_rsa | xclip -selection clipboard | echo '=> Private key copied to pasteboard.'"
-
-# Find all files in current dir/and subdirs modified in the last day
-alias recently_modified="find . -type f -mtime -1 -not -path './.git/*'"
-
-# Airport CLI alias
-alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
+# rm -i FILE: deletes the file. 
+# With -i, it prompts before each removal. After it’s removed, it’s not in the filesystem anymore (no “undo” unless you have backups/FS snapshots; it does not go to Trash)
+alias rm='rm -i'
+# mv -i SRC DEST: moves/renames the file. 
+# With -i, it prompts only if the destination exists and would be overwritten. If you move within the same disk, it’s typically just a rename; you can usually “undo” by moving it back
+alias mv='mv -i'
+# cp -i SRC DEST: copies SRC to DEST. 
+# If DEST exists, it prompts before replacing it. The original SRC remains.
+alias cp='cp -i'
+# mv -i SRC DEST: moves/renames SRC to DEST. 
+# If DEST exists, it prompts before overwriting it. After a successful move, SRC is gone from the original location
+alias ln='ln -i'
 
 #-----------------
 # Listing files
 #-----------------
 
 # List all files colorized in long format
-alias l="ls -lF ${colorflag}"
+alias list-all-files="ls -lF"
 
 # List all files colorized in long format, including dot files
-alias la="ls -laF ${colorflag}"
+alias list-all-files-including-dot-files="ls -laF"
 
 # List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
-
-# Always use color output for `ls`
-alias ls="command ls ${colorflag}"
-
-# sexy list handling (https://the.exa.website/docs/command-line-options) using Exa
-#   --long = Displays files in a table along with their metadata.
-#   --header = Adds a header row to each column in the table.
-#   --grid = Displays files as a grid.
-#   --git = Lists each file’s Git status, if tracked.
-#   --tree = Recurses into directories as a tree.
-alias lsexa='exa --header --long --git'
-alias lstree='exa --header --long --grid --git --tree'
+alias list-only-directories="ls -lF | grep --color=never '^d'"
 
 #-----------------
 # Oh my zsh customization
 #-----------------
 
 # Open .zshrc to be edited in VS Code
-alias change="code ~/.zshrc"
+alias edit-zshrc="code ~/.zshrc"
 
 # Re-run source command on .zshrc to update current terminal session with new settings
-alias update="source ~/.zshrc"
+alias source-zshrc="source ~/.zshrc"
 
 #-----------------
 # VS Code
@@ -122,3 +95,5 @@ alias vscode-extensions-install='xargs -n 1 code --install-extension < ~/extensi
 #-----------------
 
 alias python=/usr/bin/python3
+
+alias java-17="export JAVA_HOME=`/usr/libexec/java_home -v 17`; java -version"
